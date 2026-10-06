@@ -38,7 +38,7 @@ Token counts come from the usage block the API returns with each message, record
 
 ## Uninstall
 
-Run `tokenmaestro uninstall` first (from version 1.0.3; it removes the session guard's hooks from Claude Code and frees the license seat), then delete the program. On 1.0.2: `tokenmaestro guard uninstall`, then `tokenmaestro deactivate`, then delete the program.
+Run `tokenmaestro uninstall` first (it removes the session guard's hooks from Claude Code and frees the license seat), then delete the program. On versions before 1.0.3: `tokenmaestro guard uninstall`, then `tokenmaestro deactivate`, then delete the program.
 
 ## Support
 

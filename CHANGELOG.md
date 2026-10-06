@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.3 (6 October 2026)
+
+- New `tokenmaestro uninstall` (add `--purge-data` to delete the local data too): removes the session guard's hooks from Claude Code and frees this computer's license seat in one step. If the license service cannot be reached, the release is retried on the next run.
+- Session guard: `guard install --statusline` sets TokenMaestro as Claude Code's status line; the guard no longer asks before acting.
+- Hook: tells a closed input from a slow one, so a stalled pipe never delays Claude Code.
+- X-ray: skips network shares and removable drives, with a 2-second budget for the folders it checks.
+- License service: rate limits per address; the founders' link falls back to the plain price when the offer is closed.
+- Site and installers: refund policy (7 days; 14 in the EU, EEA and UK), uninstall instructions, PATH hint per shell.
+
 ## 1.0.2 (3 October 2026)
 
 - Measurement: declined attempts with no output are no longer priced; cache rewrites after a pause subtract what was still read from cache; PDF page ranges, replayed transcripts and compactions are counted correctly.
